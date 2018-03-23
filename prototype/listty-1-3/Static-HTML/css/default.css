@@ -74,7 +74,7 @@ a.link:hover,
 .primaryColor,
 .listingsInfo li:last-child p .likeArea i.fa,
 .marker-verified {
-  color: #2196f3;
+  color: #2CACE9;
 }
 
 /*=== Color Darken ===*/
@@ -86,16 +86,16 @@ a.link:hover,
 .searchSelectbox .sbOptions a:hover,
 .dashboard-list-box .list-sort .sort-select .sbHolder .sbOptions li a:hover,
 .contactSelect .sbOptions a:hover {
-  color: #2196f3 !important;
+  color: #2CACE9 !important;
 }
 
 /*=== Background color ===*/
 ::-moz-selection {
-  background-color: #2196f3;
+  background-color: #2CACE9;
 }
 
 ::selection {
-  background-color: #2196f3;
+  background-color: #2CACE9;
 }
 
 .btn-primary,
@@ -165,7 +165,7 @@ a.link:hover,
 .user-profile-section .user-profile .user-profile-content .verified-user,
 .transparent-navbar.navbar-default .navbar-toggle .icon-bar,
 .back {
-  background-color: #2196f3;
+  background-color: #2CACE9;
 }
 
 .thingsBox:hover .thingsMask,
@@ -209,7 +209,7 @@ a.link:hover,
 .navbar-default .navbar-btn:active,
 .navbar-default .navbar-btn:hover,
 .transparent-navbar.navbar-sticky .navbar-btn {
-  border-color: #2196f3;
+  border-color: #2CACE9;
 }
 
 .bg-search-white {
@@ -218,11 +218,11 @@ a.link:hover,
 
 @media (min-width: 768px) {
   .transparent-navbar.navbar-default .navbar-btn:hover {
-    color: #2196f3;
+    color: #2CACE9;
   }
 }
 
 .logo-svg .path-1,
 .navbar.navbar-default.transparent-navbar.navbar-sticky .logo-svg .path-1 {
-  fill: #2196f3;
+  fill: #2CACE9;
 }
