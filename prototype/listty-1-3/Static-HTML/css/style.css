@@ -129,8 +129,8 @@ p {
 
 h1, h2, h3, h4, h5 {
   font-family: 'Poppins', sans-serif;
-  text-transform: uppercase;
-  margin-top: 0;
+/*  text-transform: uppercase;
+*/  margin-top: 0;
   font-weight: 700;
   color: #222222;
 }
@@ -821,7 +821,7 @@ section {
 
 @media (min-width: 768px) {
   .form-group button {
-    width: 172px;
+    width: 140px;
     padding: 18px 0;
   }
 }
@@ -3726,7 +3726,7 @@ footer {
 
 /*================= 5.1 BANNER SECTION ==================*/
 .homeBanner {
-  min-height: 624px;
+  min-height: 728px;
   position: relative;
   background-repeat: no-repeat;
   background-position: center center;
@@ -3769,7 +3769,13 @@ footer {
     width: auto;
   }
 }
+.banerInfo .input-group .location {
+  width: 280px;
+}
 
+.banerInfo .input-group .date {
+  width: 180px;
+}
 .banerInfo .btn-primary i {
   margin: 0;
 }
@@ -3801,7 +3807,7 @@ footer {
 }
 
 .banerInfo .form-group {
-  width: 100%;
+  width: 80%;
   margin: 0 0 20px 0;
 }
 
@@ -3813,15 +3819,15 @@ footer {
 }
 
 @media (min-width: 992px) {
-  .banerInfo .form-group {
-    width: 360px;
+  .banerInfo .form-group{
+    width: 250px;
     margin: 0 20px 0 0;
   }
 }
 
-.banerInfo .input-group {
-  width: 100%;
-}
+
+
+
 
 /*================= 5.2 CALL TO ACTION SECTION ==================*/
 .callAction {
@@ -5396,6 +5402,17 @@ figure:hover .overlay {
 
 .categoryDetails .rating li i.fa {
   font-size: 10px;
+}
+
+.categoryDetails .access li {
+  padding-top: 20px;
+  font-size: 15px;
+  color: #2CACE9;
+}
+.categoryDetails .no-access li {
+  padding-top: 20px;
+  font-size: 15px;
+  color: #848484;
 }
 
 .likeCount {
