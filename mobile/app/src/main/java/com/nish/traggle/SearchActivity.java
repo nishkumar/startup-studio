@@ -8,7 +8,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity {
+public class SearchActivity extends AppCompatActivity {
 
     private TextView mTextMessage;
     Intent myIntent;
@@ -21,18 +21,18 @@ public class MainActivity extends AppCompatActivity {
             switch (item.getItemId()) {
                 case R.id.navigation_home:
                     mTextMessage.setText(R.string.title_home);
-                    myIntent = new Intent(MainActivity.this, MainActivity.class);
-                    MainActivity.this.startActivity(myIntent);
+                    myIntent = new Intent(SearchActivity.this, MainActivity.class);
+                    SearchActivity.this.startActivity(myIntent);
                     return true;
                 case R.id.navigation_search:
                     mTextMessage.setText(R.string.title_search);
-                    myIntent = new Intent(MainActivity.this, SearchActivity.class);
-                    MainActivity.this.startActivity(myIntent);
+                    myIntent = new Intent(SearchActivity.this, SearchActivity.class);
+                    SearchActivity.this.startActivity(myIntent);
                     return true;
                 case R.id.navigation_community:
                     mTextMessage.setText(R.string.title_activity_community);
-                    myIntent = new Intent(MainActivity.this, CommunityActivity.class);
-                    MainActivity.this.startActivity(myIntent);
+                    myIntent = new Intent(SearchActivity.this, CommunityActivity.class);
+                    SearchActivity.this.startActivity(myIntent);
                     return true;
             }
             return false;
@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_search);
 
         mTextMessage = (TextView) findViewById(R.id.message);
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
