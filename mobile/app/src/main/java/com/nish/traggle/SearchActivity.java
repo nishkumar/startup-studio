@@ -20,17 +20,14 @@ public class SearchActivity extends AppCompatActivity {
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
             switch (item.getItemId()) {
                 case R.id.navigation_home:
-                    mTextMessage.setText(R.string.title_home);
                     myIntent = new Intent(SearchActivity.this, MainActivity.class);
                     SearchActivity.this.startActivity(myIntent);
                     return true;
                 case R.id.navigation_search:
-                    mTextMessage.setText(R.string.title_search);
                     myIntent = new Intent(SearchActivity.this, SearchActivity.class);
                     SearchActivity.this.startActivity(myIntent);
                     return true;
                 case R.id.navigation_community:
-                    mTextMessage.setText(R.string.title_activity_community);
                     myIntent = new Intent(SearchActivity.this, CommunityActivity.class);
                     SearchActivity.this.startActivity(myIntent);
                     return true;
@@ -46,6 +43,7 @@ public class SearchActivity extends AppCompatActivity {
 
         mTextMessage = (TextView) findViewById(R.id.message);
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
+        navigation.setSelectedItemId(R.id.navigation_search);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
     }
 
